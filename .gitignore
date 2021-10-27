@@ -1,0 +1,16 @@
+# /
+*.suo
+*.o
+/.git
+
+*/obj
+*/bin
+*/*.suo
+*/x64
+
+/debug.log
+
+.DS_Store
+*/.DS_Store
+*.DS_Store
+*/*.DS_Store
