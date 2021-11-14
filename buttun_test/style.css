@@ -12,3 +12,8 @@
   justify-content: space-evenly;
 }
 
+.control {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
