@@ -1,0 +1,14 @@
+
+
+.content {
+  width: 400px;
+  height: 100px;
+  background-color: #00ffff;
+}
+
+.inner {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
