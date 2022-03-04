@@ -1,7 +1,7 @@
 # terukstatt
 ## arida
 
-https://tarosay.github.io/terukstatt/
+https://tarosay.github.io/terukstatt/CountdownTimer
 
 https://www.terukstatt.net/
 
