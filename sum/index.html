@@ -6,17 +6,30 @@
 </head>
 <body>
   <form id="form1" action="#">
-    １から<input type="text" id="input-message">までの合計は？
+    <div class="box2"> 
+    １から<input type="text" size="2" id="input-message">までの合計は？
     <input type="button" onclick="showMessage()" value="計算">
+      </div>
   </form>
   <p id="output-message"></p>
   <script language="javascript" type="text/javascript">
     const showMessage = () => {
       const textbox = document.getElementById("input-message");
       const inputValue = Number(textbox.value);
+      let output;
+      if(inputValue<1)
+      {
+        output ="１以上の数を入力してください。"
+      }
+      else
+      {
+        
+      
+         
 
       //テキストボックスの値を使って、出力するメッセージを生成する
-      const output = inputValue*(inputValue+1)/2;
+        output = inputValue*(inputValue+1)/2;
+      }  
       //出力用のp要素にメッセージを表示
       document.getElementById("output-message").innerHTML = output;
     }
