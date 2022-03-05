@@ -6,7 +6,7 @@
 </head>
 <body>
   <form id="form1" action="#">
-    データの和は<input type="text" id="input-message">です！
+    １から<input type="text" id="input-message">の和は？
     <input type="button" onclick="showMessage()" value="送信">
   </form>
   <p id="output-message"></p>
@@ -16,7 +16,7 @@
       const inputValue = textbox.value;
 
       //テキストボックスの値を使って、出力するメッセージを生成する
-      const output = "入力された内容は「" + inputValue + "」です。";
+      const output = "データの和は「" + inputValue + "」です！";
       //出力用のp要素にメッセージを表示
       document.getElementById("output-message").innerHTML = output;
     }
