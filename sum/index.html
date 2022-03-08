@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <title>和の計算</title>
+  <link type="text/css" href="style.css" rel="stylesheet" />
+  <script language="javascript" type="text/javascript" src="test.js"></script>
 </head>
 <body>
   <form id="form1" action="#">
@@ -12,27 +14,5 @@
       </div>
   </form>
   <p id="output-message"></p>
-  <script language="javascript" type="text/javascript">
-    const showMessage = () => {
-      const textbox = document.getElementById("input-message");
-      const inputValue = Number(textbox.value);
-      let output;
-      if(inputValue<1)
-      {
-        output ="１以上の数を入力してください。"
-      }
-      else
-      {
-        
-      
-         
-
-      //テキストボックスの値を使って、出力するメッセージを生成する
-        output = inputValue*(inputValue+1)/2;
-      }  
-      //出力用のp要素にメッセージを表示
-      document.getElementById("output-message").innerHTML = output;
-    }
-  </script>
 </body>
 </html>
