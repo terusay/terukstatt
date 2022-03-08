@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>平均</title>
+</head>
+<body>
+  <form id="form1" action="#">
+    <div class="box2"> 
+    データの入力<input type="text" size="2" id="input-message">
+    <input type="button" onclick="addData()" value="データの追加">
+      <input type="button" onclick="averageCalculate()" value="平均">
+      </div>
+  </form>
+  <p id="output-message"></p>
+  <script language="javascript" type="text/javascript">
+    let val={}
+    let n=0
+    const addData = () => {
+      const textbox = document.getElementById("input-message");
+      const inputValue = Number(textbox.value);
+      let output;
+      if(isNaN(inputValue))
+      {
+        output ="数を入力してください。"
+      }
+      else 
+      {
+        val[n] = inputValue
+        n= n+1
+        output = String(inputValue)+','+String(n)
+      }  
+      
+      document.getElementById("output-message").innerHTML = output;
+    }
+    
+    const averageCalculate = () => {
+      
+      let sum= 0
+      for(let i=0;i<n;i=i+1)
+        {
+          sum= sum+val[i]
+        }
+      
+      if(n==0)
+        {
+          output ="データが入力されていません"
+        }
+      else
+        {
+       
+      let ave= sum/n
+      output =String(n)+"個の合計は"+String(sum)+",平均は"+String(ave)
+        }
+      document.getElementById("output-message").innerHTML = output;
+    }
+  </script>
+</body>
+</html>
