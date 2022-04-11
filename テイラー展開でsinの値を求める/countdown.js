@@ -1,4 +1,4 @@
-const Calc = () => { 
+const Keisan = () => { 
   let deg = Number(document.getElementById("inp-mess1").value);
   let n = Number(document.getElementById("inp-mess2").value);
   
