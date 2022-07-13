@@ -140,7 +140,8 @@ const DoOverButton = () =>{
 }
 
 function initialize(){
-  document.getElementById("00").value = ""
+  let qwe = document.getElementById("00")
+  qwe.value = ""
   document.getElementById("01").value = ""
   document.getElementById("02").value = ""
   document.getElementById("10").value = ""
