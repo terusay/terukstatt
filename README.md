@@ -1,5 +1,4 @@
 # terukstatt
-## arida
 
 https://tarosay.github.io/terukstatt/CountdownTimer
 
