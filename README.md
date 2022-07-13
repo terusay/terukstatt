@@ -11,4 +11,4 @@ https://www.terukstatt.net/buttun_test/
 
 https://www.terukstatt.net/sum
 
-
+https://www.terukstatt.net/marubatsuGame/
